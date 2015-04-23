@@ -3,7 +3,7 @@
 	"manifest_version": 2,
 	"name": "Telescape",
 	"version": "0.0.1",
-	"background": { "scripts": ["background.js"] }, //¼ÓÔØjs
+	"background": { "scripts": ["background.js"] }, //åŠ è½½js
 	"permissions": [
 		"nativeMessaging",
 		"tabs",
@@ -12,7 +12,7 @@
 		"http://192.168.1.234/*",
 		"file://*"
 	
-	],// ·ÃÎÊ ±êÇ©
+	],// è®¿é—® æ ‡ç­¾
 	"content_scripts": [
 		{
 			"matches": [
