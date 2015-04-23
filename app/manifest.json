@@ -1,0 +1,38 @@
+// http://chrome.liuyixi.com/manifest.html
+{
+	"manifest_version": 2,
+	"name": "Telescape",
+	"version": "0.0.1",
+	"background": { "scripts": ["background.js"] }, //加载js
+	"permissions": [
+		"nativeMessaging",
+		"tabs",
+		"http://localhost/*",
+		"http://127.0.0.1/*",
+		"http://192.168.1.234/*",
+		"file://*"
+	
+	],// 访问 标签
+	"content_scripts": [
+		{
+			"matches": [
+				"http://localhost/*",
+				"http://127.0.0.1/*",
+				"http://192.168.1.234/*",
+				"file://*"
+			],
+			"js": ["main.js"]
+		}
+	],
+	"icons": {
+		"128": "icon-128.png"
+	},
+	"page_action": {
+		"default_icon": {
+			"16": "logo16.png"
+		},
+		"default_title": "Telescape"
+	}
+}
+
+  
