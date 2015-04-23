@@ -3,7 +3,7 @@
 	"manifest_version": 2,
 	"name": "Telescape",
 	"version": "0.0.1",
-	"background": { "scripts": ["background.js"] }, //加载js
+	"background": { "scripts": ["background.js"] },
 	"permissions": [
 		"nativeMessaging",
 		"tabs",
@@ -12,7 +12,7 @@
 		"http://192.168.1.234/*",
 		"file://*"
 	
-	],// 访问 标签
+	],
 	"content_scripts": [
 		{
 			"matches": [
