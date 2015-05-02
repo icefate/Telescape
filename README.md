@@ -1,7 +1,175 @@
 # Telescape
 
-è¿™æ˜¯ä¸€ä¸ªChromeæµè§ˆå™¨æ‰©å±• - A Chrome extension
 
-æ–‡æ¡£åœ¨å†™, æœ‰ç©ºå†æ”¾ä¸Šæ¥
+Telescape ÊÇÒ»¸öChromeä¯ÀÀÆ÷À©Õ¹¡£Í¨¹ıChromeä¯ÀÀÆ÷µ÷ÓÃ editplus »ò sublime µÈ±à¼­Æ÷£¬´ò¿ªµ±Ç°ä¯ÀÀµÄÒ³ÃæµÄ´úÂëÎÄ¼ş¡£¼òµ¥µÄËµ¾ÍÊÇChromeä¯ÀÀÆ÷µ÷ÓÃÍâ²¿³ÌĞò¡£
 
-ä½ ä¹Ÿè®¸ä¼šå–œæ¬¢.
+GitÁ´½Ó: [https://github.com/icefate/Sublime-CodeExcerpt](https://github.com/icefate/Sublime-CodeExcerpt)
+
+×÷Õß£ºT.N.T (icefate)
+
+¹ÙÍø: [http://ce.buckethead.cn](http://ce.buckethead.cn) 
+
+Email£ºi#buckethead.cn (Çë½«#¸ÄÎª@)
+
+
+
+## Ò»Ğ©»°
+
+ÎÒÄ¿Ç°ÎªÖ¹Ò»Ö±ÊÇÓÃeditplus ºÍ sublime Ğ´php¡¢css¡¢jsµÈµÈ£¬ÕâÁ½¸ö±à¼­Æ÷´ò¿ªËÙ¶È¹»¿ì£¬ÎÒ²»Ï²»¶´óĞÍµÄIDE¡£
+
+¹ØÓÚµ÷ÊÔ£¬ÎÒÊÇÖ±½Óä¯ÀÀÆ÷¿´Ğ§¹û£¬¿´ÄÄ¸öÒ³Ãæ²»Ë³ÑÛÔÙÈ¥·­´ÅÅÌÀïµÄ´úÂëÎÄ¼şÀ´¸Ä¡£È»ºóÄØ£¬ÎÒĞèÒª²»Í£µØ´©ËóÓÚ´æ·Å¸÷ÖÖÀàĞÍ´úÂëµÄÎÄ¼ş¼Ğ. 
+
+Å¼È»µÃÖªChromeÀ©Õ¹¿ª·¢Ìá¹©ÁËÓëÍâ²¿³ÌĞòÍ¨ĞÅµÄ¹¦ÄÜ£¬È»ºó²éÁËĞ©ÎÄµµ£¬Ğ´ÁËÕâ¸ö¶«Î÷¡£
+
+
+
+## Ğ§¹ûÑİÊ¾ - Gif 
+
+
+ÎÄµµ±È½Ï†ªàÂ£¬²»¹ı¿´¹ıgifºó£¬Ò²ĞíÄã»áÏ²»¶¡£
+
+
+Chromeµ÷ÓÃ±à¼­Æ÷´ò¿ªÎÄ¼ş ¡¢ ´ò¿ªÎÄ¼ş¼Ğ- Ğ§¹ûÑİÊ¾£º<a href="gif/1.gif">gif/1.gif </a>
+
+ÎÒ×Ô¼ºÓÃµÄ£º<a href="gif/2.gif">gif/2.gif</a> -- ×¢Òâ£¬±¾ÏîÄ¿ÖĞ²»°üº¬ÆäÖĞµÄjs¹¦ÄÜ
+
+
+
+## ×¼±¸- Prepare
+
+ÏµÍ³£º Win 7 64Î» ¡¢ Win XP ÒÔÇ°Ò²¿ÉÒÔ£¬Ğí¾Ã²»ÓÃÁË£¬Äã¿ÉÒÔÊÔÊÔ¡£
+
+Chrome°æ±¾£º 39.0.2171.99 m  -- ×îĞÂ°æ±¾µÄÃ»²â¡£
+
+×¢Òâ£ºÄãµÄµçÄÔĞèÒª°²×° `.net framework 4.0` ÒÔÉÏ £¬ ÒÔÏÂ»áËµÃ÷
+
+
+## °²×° - Install
+
+### Ìí¼Ó×¢²áÏî (¸½gif)
+
+½¨ÒéÏÈÔÄ¶Á£¬ÔÙ¿´ºó±ßµÄgif
+
+<strong>1¡¢ÔÚ×¢²á±í¹ÜÀíÖĞÕÒµ½ NativeMessagingHosts</strong>
+
+¿ÉÄÜÎ»ÓÚÈçÏÂÁ½¸öÎ»ÖÃ£º
+```
+  HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\ 
+»ò
+  HKEY_CURRENT_USER\SOFTWARE\Google\Chrome\NativeMessagingHosts\ 
+```
+ÈôÃ»ÓĞ£¬ÔòÕÒµ½ Google\Chrome\ µÄ½Úµã£¬×Ô¼º¼ÓÒ»¸öÊÔÊÔ
+
+<br>
+<strong>2¡¢ÔÚ NativeMessagingHosts ÏÂĞÂ½¨ telescape Ïî</strong>
+
+NativeMessagingHosts ÏÂĞÂ½¨ÃûÎª `telescape` µÄÏî£¬ÖµÌîĞ´ `Telescape.jsonµÄÂ·¾¶` £¬ÀıÈç£º
+```
+E:\APMServ5.2.6\www\htdocs\jsplugin\ChromeExt\Telescape\host\Telescape.json
+```
+
+
+¸½gif £º <a href="gif/regedit.gif" target="_blank" style="font-size: 18px;">×¢²á±íÅäÖÃ - regedit.gif</a>
+
+
+
+### ÅäÖÃconfig.ini
+
+ĞŞ¸Ä`host/config.ini`ÎÄ¼ş,  ÅäÖÃ±à¼­Æ÷Â·¾¶: 
+```
+[Editor]
+editplus="D:\Program Files\EditPlus 3.51\EditPlus.exe"
+sublime="D:\Program Files\Sublime Text 2\SublimeText.exe"
+notepad="notepad"
+```
+* editplus / sublime ÊÇµçÄÔÉÏ°²×°ºÃµÄ³ÌĞòÎ»ÖÃ¡£ÉÏÃæµÄÉèÖÃÊÇÎÒ£¬¼ÇµÃ¸Ä³ÉÄãµÄ¡£
+* notepadÊÇÏµÍ³µÄ¼ÇÊÂ±¾
+
+Ò²¿ÉÒÔÀ©Õ¹£¬ÉèÖÃ¸ü¶à±à¼­Æ÷£¬Ç°ÌáÊÇÕâĞ©±à¼­Æ÷ÄÜÓÃÃüÁîĞĞ´ò¿ªÎÄ¼ş¡£
+
+ÒÔÏÂ Telescape.exe»áËµÃ÷
+
+
+### chrome°²×°TelescapeÀ©Õ¹ 
+
+1. ´ò¿ªchromeÀ©Õ¹½çÃæ£º`chrome://extensions/`
+2. ½«<span class="blue">appÎÄ¼ş¼Ğ</span> ÍÏÈëµ½ä¯ÀÀÆ÷ÖĞ
+3. °²×°³É¹¦ºó£¬ÕÒµ½À©Õ¹µÄID£¬Èç kolkkhbadaejpjklkedblfahiahaipha  , ½«´ËIDÌîÈëµ½ `host/Telescape.json` µÄallowed_origins½Úµã,ÀıÈç£º
+```
+	"allowed_origins": [
+		"chrome-extension://kolkkhbadaejpjklkedblfahiahaipha/"
+	]
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Ê¹ÓÃ - How to use
+
+### ¸øhtml±êÇ©¼ÓÉÏÊôĞÔ
+
+html±êÇ©¼ÓÉÏÊôĞÔ : class / codefilepath / editor ÈçÏÂ
+
+```
+<!-- ÀíÂÛÉÏ¿ÉÒÔÓ¦ÓÃÓÚÈÎºÎ±êÇ© , ÒÔspan×÷ÎªÊ¾Àı -->
+<span class="telescape" codefilepath="E:\APMServ5.2.6\www\htdocs\t.php" editor="editplus">t.php</span>
+
+```
+* ±ØĞëÉèÖÃ class="telescape"
+* editorµÄÖµÊÇconfig.iniÉèÖÃµÄÏî £ºeditplus »ò sublime »ò notepad , Ò²¿ÉÒÔÁô¿Õ£¬ÄÇÃ´Ä¬ÈÏÓÃeditplus¡£µ±È»Ä¬ÈÏÊ¹ÓÃÊ²Ã´±à¼­Æ÷Ò²¿ÉÒÔ¸Ä, ĞŞ¸Ä `app/main.js` ÀïÃæÓĞ×¢ÊÍ
+* codefilepath¿ÉÒÔÊÇÒ»¸öÎÄ¼ş£¬Ò²¿ÉÒÔÊÇÒ»¸öÎÄ¼ş¼Ğ£¬Èô²»´æÔÚ£¬Ôòµ¯³ö´íÎóÌáÊ¾¡£
+
+
+×¢Òâ£º²å¼ş»á²»¶Ï»ñÈ¡telescape±êÇ©£¬²¢Ìí¼ÓÊÂ¼ş
+
+
+ 
+### Telescape.exe 
+
+
+Telescape.exeÊÇÊ¹ÓÃC# ¿ª·¢µÄ£¬ÕâÒªÇóÄã±ØĞë°²×° .net framework 4.0 ÒÔÉÏ ¡£Ä¿Ç° Telescape.exe µÄÔ´ÂëÎÒÃ»·Å³öÀ´ ... ÎÒÏë¿´ÏÂ»¹ÓĞÊ²Ã´¿ÉÒÔ¸ÄµÄ£¬Äã·´±àÒ»ÏÂ¿ÉÒÔ¿´µ½Ô´Âë¡£
+
+
+Èç¹ûÄãË«»÷Ö±½Ó´ò¿ªTelescape.exe£¬»áÓĞÈí¼ş½çÃæ³öÏÖ£¬µ«ËüÊ²Ã´¶¼Ã»¸É¡£ËüÊµ¼ÊÉÏÊÇÒ»¸ö½ÓÊÜÃüÁîĞĞ²ÎÊıµÄ³ÌĞò£¬×÷ÎªÇÅ½Ó³ÌĞò¡£
+
+
+Êµ¼ÊÉÏÉÏÃæÖ´ĞĞµÄÊÇ£º
+
+```
+// ×¢Òâ×ªÒå
+$ Telescape.exe "{\"Editor\":\"sublime\",\"FilePath\":\"E:\\APMServ5.2.6\\www\\htdocs\\t.php\"}"
+
+Ö®ºó Telescape.exe»á½âÎöjson, ´Óconfig.ini È¡µÃ Editor,  ÔÙµ÷ÓÃÃüÁîĞĞÓÃEditor´ò¿ªFilePath
+
+```
+
+Á÷³Ì¾ÍÊÇ£º<span class="red">Í¨¹ı chrome ²å¼ş·¢ËÍ²ÎÊıµ½ Telescape.exe ---- Telescape.exeÅĞ¶Ï´¦Àíºó£¬»áÊ¹ÓÃÃüÁîĞĞµ÷±à¼­Æ÷´ò¿ª¾ßÌåÎÄ¼ş</span>
+
+
+### ÆäËû
+
+
+À©Õ¹ÔöÇ¿£ºĞŞ¸Ä Telescape.exe ,¿ÉÒÔ ×öÈÎºÎÄãÄÜÏëµ½²¢ÊµÏÖµÄ¹¦ÄÜ
+
+
+ÊÂÊµÉÏÒ²¿ÉÒÔÓÃÆäËûÓïÑÔ¿ª·¢ÀàËÆTelescape.exeµÄ¶«Î÷£¬ÀıÈçjava ¡¢c++¡¢pythonµÈµÄ
+
+
+ÉõÖÁ¸ü·½±ãµÄÊÇ£¬Äã¿ÉÒÔÊ¹ÓÃÒ»¸öbatÎÄ¼şÒÔÌæ´ú Telescape.exe£¬µ«batÎÄ¼şÃ²ËÆ»áµ¯³öÒ»¸öÃüÁîĞĞ´°¿Ú£¬´ËÍâ¾ÍÊÇÆä¿ÉÀ©Õ¹ĞÔ²»Ç¿¡£
+
+
+
+
+<script charset="utf-8" type="text/javascript"  src="http://localhost/0.global.js/load_doc_resource.js"></script>
