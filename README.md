@@ -3,7 +3,7 @@
 
 Telescape 是一个Chrome浏览器扩展。通过Chrome浏览器调用 editplus 或 sublime 等编辑器，打开当前浏览的页面的代码文件。简单的说就是Chrome浏览器调用外部程序。
 
-Git链接: [https://github.com/icefate/Sublime-CodeExcerpt](https://github.com/icefate/Sublime-CodeExcerpt)
+Git链接: [https://github.com/icefate/Telescape](https://github.com/icefate/Telescape)
 
 作者：T.N.T (icefate)
 
@@ -169,7 +169,3 @@ $ Telescape.exe "{\"Editor\":\"sublime\",\"FilePath\":\"E:\\APMServ5.2.6\\www\\h
 
 甚至更方便的是，你可以使用一个bat文件以替代 Telescape.exe，但bat文件貌似会弹出一个命令行窗口，此外就是其可扩展性不强。
 
-
-
-
-<script charset="utf-8" type="text/javascript"  src="http://localhost/0.global.js/load_doc_resource.js"></script>
