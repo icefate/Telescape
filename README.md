@@ -29,9 +29,9 @@ Email：i#buckethead.cn (请将#改为@)
 文档比较啰嗦，不过看过gif后，也许你会喜欢。
 
 
-Chrome调用编辑器打开文件 、 打开文件夹- 效果演示：<a href="gif/1.gif">gif/1.gif </a>
+Chrome调用编辑器打开文件 、 打开文件夹- 效果演示：<a href="https://raw.githubusercontent.com/icefate/Telescape/master/gif/1.gif">gif/1.gif </a>
 
-我自己用的：<a href="gif/2.gif">gif/2.gif</a> -- 注意，本项目中不包含其中的js功能
+我自己用的：<a href="https://raw.githubusercontent.com/icefate/Telescape/master/gif/2.gif">gif/2.gif</a> -- 注意，本项目中不包含其中的js功能
 
 
 
@@ -69,7 +69,7 @@ E:\APMServ5.2.6\www\htdocs\jsplugin\ChromeExt\Telescape\host\Telescape.json
 ```
 
 
-附gif ： <a href="gif/regedit.gif" target="_blank" style="font-size: 18px;">注册表配置 - regedit.gif</a>
+附gif ： <a href="https://raw.githubusercontent.com/icefate/Telescape/master/gif/regedit.gif" target="_blank" style="font-size: 18px;">注册表配置 - regedit.gif</a>
 
 
 
