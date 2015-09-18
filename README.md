@@ -135,13 +135,7 @@ notepad="notepad"
 
 
 
-
-
-
-
-
-
-## 使用 - How to use
+## 使用 - Usage
 
 ### 给html标签加上属性
 
