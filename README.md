@@ -186,7 +186,7 @@ $ Telescape.exe "{\"Editor\":\"sublime\",\"FilePath\":\"E:\\APMServ5.2.6\\www\\h
 ### 其他
 
 
-扩展增强：修改 Telescape.exe ,可以 做任何你能想到并实现的功能
+扩展增强：修改 Telescape.exe ,可以做任何你能想到并实现的功能
 
 
 事实上也可以用其他语言开发类似Telescape.exe的东西，例如java 、c++、python等的
