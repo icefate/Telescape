@@ -11,9 +11,6 @@ Git链接: [https://github.com/icefate/Telescape](https://github.com/icefate/Teles
 Email：i#buckethead.cn (请将#改为@)
 
 
-文档去头去尾，还是简单点好。
-
-
 ## 效果演示 - Gif 
 
 
@@ -94,7 +91,7 @@ notepad="notepad"
 
 
 
-## 使用 - How to use
+## 使用 - Usage
 
 ### 给html标签加上属性
 
@@ -132,3 +129,4 @@ $ Telescape.exe "{\"Editor\":\"sublime\",\"FilePath\":\"E:\\APMServ5.2.6\\www\\h
 之后 Telescape.exe会解析json, 从config.ini 取得 Editor,  再调用命令行用Editor打开FilePath
 
 ```
+
