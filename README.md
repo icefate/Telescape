@@ -1,6 +1,5 @@
 # Telescape
 
-
 Telescape 是一个Chrome浏览器扩展。通过Chrome浏览器调用 editplus 或 sublime 等编辑器，打开当前浏览的页面的代码文件。简单的说就是Chrome浏览器调用外部程序。
 
 Git链接: [https://github.com/icefate/Telescape](https://github.com/icefate/Telescape)
@@ -12,40 +11,7 @@ Git链接: [https://github.com/icefate/Telescape](https://github.com/icefate/Teles
 Email：i#buckethead.cn (请将#改为@)
 
 
-
-## 一首诗
-
-自盘古开天辟地以来，
-
-我一直是用editplus 和 sublime 写php、css、js...... 的，
-
-这两个编辑器打开速度够快，
-
-我不喜欢大型的IDE。
-
-关于调试，
-
-我是直接浏览器看效果，看哪个页面不顺眼再去翻磁盘里的代码文件来改。
-
-然后呢，
-
-我需要不停地穿梭于存放各种类型代码的文件夹. 
-
-老早就想通过浏览器打开代码文件，
-
-诚然IE通过ActiveX似乎的确可以，
-
-但是你懂的! 
-
-现在IE沦落到连微软都要抛弃了，性能、Bug、标准化支持等等问题~ 
-
-某天看到了IE Tab,
-
-于是得知了Chrome扩展开发提供了与外部程序通信的功能，
-
-然后查了些文档， 
-
-最后写了这个东西。
+文档去头去尾，还是简单点好。
 
 
 ## 效果演示 - Gif 
@@ -54,9 +20,9 @@ Email：i#buckethead.cn (请将#改为@)
 文档比较啰嗦，不过看过gif后，也许你会喜欢。
 
 
-Chrome调用编辑器打开文件 、 打开文件夹- 效果演示：<a href="https://raw.githubusercontent.com/icefate/Telescape/master/gif/1.gif">gif/1.gif </a>
+Chrome调用编辑器打开文件 、 打开文件夹- 效果演示：<a href="gif/1.gif">gif/1.gif </a>
 
-我自己用的：<a href="https://raw.githubusercontent.com/icefate/Telescape/master/gif/2.gif">gif/2.gif</a> -- 注意，本项目中不包含其中的js功能
+我自己用的：<a href="gif/2.gif">gif/2.gif</a> -- 注意，本项目中不包含其中的js功能
 
 
 
@@ -94,7 +60,7 @@ E:\APMServ5.2.6\www\htdocs\jsplugin\ChromeExt\Telescape\host\Telescape.json
 ```
 
 
-附gif ： <a href="https://raw.githubusercontent.com/icefate/Telescape/master/gif/regedit.gif" target="_blank" style="font-size: 18px;">注册表配置 - regedit.gif</a>
+附gif ： <a href="gif/regedit.gif" target="_blank" style="font-size: 18px;">注册表配置 - regedit.gif</a>
 
 
 
@@ -128,14 +94,7 @@ notepad="notepad"
 
 
 
-
-
-
-
-
-
-
-## 使用 - Usage
+## 使用 - How to use
 
 ### 给html标签加上属性
 
@@ -144,6 +103,10 @@ html标签加上属性 : class / codefilepath / editor 如下
 ```
 <!-- 理论上可以应用于任何标签 , 以span作为示例 -->
 <span class="telescape" codefilepath="E:\APMServ5.2.6\www\htdocs\t.php" editor="editplus">t.php</span>
+
+<!-- 新增支持中文路径 -->
+<span class="telescape" codefilepath="E:\APMServ5.2.6\www\htdocs\中文文件名.php" editor="editplus">中文文件名.php</span>
+
 
 ```
 * 必须设置 class="telescape"
@@ -154,17 +117,13 @@ html标签加上属性 : class / codefilepath / editor 如下
 注意：插件会不断获取telescape标签，并添加事件
 
 
- 
 ### Telescape.exe 
 
-
-Telescape.exe是使用C# 开发的，这要求你必须安装 .net framework 4.0 以上 。目前 Telescape.exe 的源码我没放出来 ... 我想看下还有什么可以改的，你反编一下可以看到源码。
-
+Telescape.exe是使用C# 开发的，这要求你必须安装 .net framework 4.0 以上 。 Telescape.exe 的源码过于丑陋，还是不放出来了.... 你反编一下可以看到源码。
 
 如果你双击直接打开Telescape.exe，会有软件界面出现，但它什么都没干。它实际上是一个接受命令行参数的程序，作为桥接程序。
 
-
-实际上上面执行的是：
+命令行：
 
 ```
 // 注意转义
@@ -173,18 +132,3 @@ $ Telescape.exe "{\"Editor\":\"sublime\",\"FilePath\":\"E:\\APMServ5.2.6\\www\\h
 之后 Telescape.exe会解析json, 从config.ini 取得 Editor,  再调用命令行用Editor打开FilePath
 
 ```
-
-流程就是：<span class="red">通过 chrome 插件发送参数到 Telescape.exe ---- Telescape.exe判断处理后，会使用命令行调编辑器打开具体文件</span>
-
-
-### 其他
-
-
-扩展增强：修改 Telescape.exe ,可以做任何你能想到并实现的功能
-
-
-事实上也可以用其他语言开发类似Telescape.exe的东西，例如java 、c++、python等的
-
-
-甚至更方便的是，你可以使用一个bat文件以替代 Telescape.exe，但bat文件貌似会弹出一个命令行窗口，此外就是其可扩展性不强。
-
