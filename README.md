@@ -90,7 +90,7 @@ notepad="notepad"
 ```
 
 * 此扩展不会放到chrome商店里，因为有exe文件，可能很难被审核通过。
-* 作为本地添加的扩展，chrome时不时会弹出“<span style="color:red">请停用以开发者模式运行的扩展程序</span>”。 Win 7 可以设置组策略屏蔽这个提示，具体的操作见：[https://www.zhihu.com/question/24027794/answer/34426149](https://www.zhihu.com/question/24027794/answer/34426149)
+* 作为本地添加的扩展，chrome时不时会弹出`请停用以开发者模式运行的扩展程序`。 Win 7 可以设置组策略屏蔽这个提示，具体的操作见：[https://www.zhihu.com/question/24027794/answer/34426149](https://www.zhihu.com/question/24027794/answer/34426149)
 
 
 ## 使用 - Usage
