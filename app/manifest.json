@@ -9,7 +9,7 @@
 		"tabs",
 		"http://localhost/*",
 		"http://127.0.0.1/*",
-		"http://192.168.1.234/*",
+		"http://192.168.1.141/*",
 		"file://*"
 	
 	],// 访问 标签
@@ -18,18 +18,24 @@
 			"matches": [
 				"http://localhost/*",
 				"http://127.0.0.1/*",
-				"http://192.168.1.234/*",
+				"http://192.168.1.141/*",
 				"file://*"
 			],
 			"js": ["main.js"]
 		}
 	],
 	"icons": {
-		"128": "icon-128.png"
+		"16": "images/icon_16.png",
+		"32": "images/icon_32.png",
+		"48": "images/icon_48.png",
+		"128": "images/icon_128.png"
 	},
 	"page_action": {
 		"default_icon": {
-			"16": "logo16.png"
+			"16": "images/icon_16.png",
+			"32": "images/icon_32.png",
+			"48": "images/icon_48.png",
+			"128": "images/icon_128.png"
 		},
 		"default_title": "Telescape"
 	}
